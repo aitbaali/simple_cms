@@ -1,0 +1,11 @@
+<% evil_string = "<script>alert('hoooooo');</script>".html_safe %>
+<% safe_string = "<strong>welcome to my site</strong>".html_safe %>
+
+<%#=raw(evil_string) %><br/>
+<%#= raw(safe_string) %><br/><br/>
+
+<%= evil_string.html_safe? %><br/>
+<%= safe_string.html_safe? %><br/><br/>
+
+<%= sanitize(evil_string) %>
+<%= safe_string %>

@@ -1,0 +1,32 @@
+<h1>Demo#hello</h1>
+<p>Hello demo html file from hello</p>
+
+<%= 1+1 %>
+<br/>
+<br/>
+
+<% target = "abdou" %>
+<%= "Hello #{target}" %>
+<br/>
+<br/>
+
+<% @array.each do |n|%>
+	<%= n %>
+	<br/>
+<%end%>
+<br/>
+<br/>
+
+ID: <%= params[:id] %><br/>
+ID: <%= @id %><br/>
+Next Page: <%= @page + 1 %>
+<br/>
+<br/>
+
+<hr />
+<%= params.inspect %>
+<br/>
+<br/>
+
+<a href="/demo/index">Index Page with href</a><br/>
+<%= link_to('Index Page With link to', {:action => "index"}) %>
